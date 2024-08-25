@@ -1,0 +1,580 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #fdfbf9;
+}
+
+header nav {
+    width: 100%;
+    height: 85px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: white;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.125);
+}
+
+header nav .navbar-content {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    align-items: center;
+    height: 100%;
+    margin: 0px auto;
+    position: relative;
+}
+
+header nav .navbar-content .nav-left {
+    display: flex;
+    align-items: center;
+}
+
+header nav .navbar-content .nav-left h2 {
+    color: #4b2aad;
+    font-weight: 700;
+}
+
+header nav .navbar-content .nav-left .nav-links li {
+    list-style: none;
+    margin: 15px 0px 0px 0px;
+    /*top left right bottom */
+    display: inline-block;
+    font-size: 20px;
+}
+
+header nav .navbar-content .nav-left .nav-links a {
+    color: #3d3b39;
+    padding: 10px 15px;
+    border-radius: 50px;
+}
+
+header nav .navbar-content .nav-left .nav-links a:hover {
+    background-color: #3d3b391e;
+    transition: all .3s ease-in-out;
+}
+
+header nav .nav-right{
+    display: flex;
+    align-items: center;
+}
+header nav .nav-right>:nth-child(1) {
+    color: #3d3b39;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 15px;
+    border-radius: 50px;
+}
+
+header nav .nav-right>:nth-child(1):hover {
+    background-color: #3d3b391e;
+    transition: all .3s ease-in-out;
+}
+
+header nav .nav-right a>:nth-of-type(1) {
+    background-color: #4b2aad;
+    border-radius: 50px;
+    padding: 8px 20px 10px 20px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+header nav .nav-right a>:nth-of-type(1):hover{
+    background-color: #341984;
+    transition: all .3s ease-in-out;
+    
+}
+
+header .hero {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    margin: 8rem auto 105px auto;
+    align-items: center;
+}
+
+header .hero .hero-left {
+    width: 45%;
+}
+
+header .hero .hero-left h5 {
+    font-size: 15px;
+    color: #5c5856;
+    text-transform: uppercase;
+}
+
+
+header .hero .hero-left h1 {
+    color: black;
+    font-size: 50px;
+}
+
+header .hero .hero-left p {
+    font-size: 22px;
+    color: #5c5856;
+    margin-top: 15px;
+}
+
+header .hero .hero-left a {
+    text-decoration: none;
+}
+
+header .hero .hero-left a>:nth-of-type(1) {
+    background-color: #4b2aad;
+    border-radius: 50px;
+    padding: 14px 30px 16px 30px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+header .hero .hero-left a>:nth-of-type(1):hover{
+    background-color: #341984;
+    transition: all .3s ease-in-out;
+    
+}
+header .hero img {
+    height: 35rem;
+    border-radius: 10px;
+    margin-top: -20px;
+}
+
+.about {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto 120px auto;
+}
+
+.about h1 {
+    color: black;
+    text-align: center;
+    margin: 0px auto;
+    width: 90%;
+    font-size: 38px;
+}
+
+.about p {
+    color: #5c5856;
+    text-align: center;
+    margin: 15px auto 0px auto;
+    font-size: 22px;
+    width: 80%;
+}
+
+.about .cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 90px;
+}
+
+.about .cards .card {
+    width: 28.88%;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .cards .card h5 {
+    font-size: 20px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+
+.about .cards .card p {
+    font-size: 18px;
+    width: 100%;
+    margin-top: 0px;
+}
+
+
+.services {
+    width: 85%;
+    margin: 0px auto;
+}
+
+.services h1 {
+    font-size: 38px;
+    text-align: center;
+}
+
+.services p {
+    color: #5c5856;
+    text-align: center;
+    margin: 15px auto 0px auto;
+    font-size: 22px;
+    width: 70%;
+}
+
+.services .service {
+    display: flex;
+    width: 100%;
+    /* background-color: red; */
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 65px;
+}
+
+
+.services .service .service-left {
+    width: 50%;
+}
+
+.services .service .service-left>:nth-child(1) {
+    font-size: 15px;
+    color: #5c5856;
+    text-transform: uppercase;
+}
+
+.services .service .service-left>:nth-child(2) {
+    color: black;
+    font-size: 30px;
+    text-align: left;
+}
+
+.services .service .service-left p {
+    font-size: 20px;
+    color: #5c5856;
+    margin-top: 15px;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.services .service .service-left a {
+    color: #4b2aad;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    padding-top: 50px;
+}
+
+.services .service .service-right img {
+    height: 25rem;
+}
+
+
+.services .ratings {
+    width: 85%;
+    margin: 100px auto;
+}
+
+.services .ratings .stars {
+    text-align: center;
+}
+
+.services .ratings .stars i {
+    margin: 0px 10px 0px 10px;
+    color: #eca131;
+    font-size: 20px;
+}
+
+.services .ratings p {
+    color: black;
+    width: 90%;
+}
+
+.services .ratings h3 {
+    color: #5c5856;
+    text-align: center;
+    margin-top: 18px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.sign-up {
+    background-color: #201445;
+    width: 85%;
+    border-radius: 10px;
+    padding: 60px;
+    margin: 110px auto;
+}
+
+.sign-up h1 {
+    color: white;
+    text-align: center;
+}
+
+#click{
+    display: none;
+}
+
+.sign-up p {
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.sign-up a {
+    text-decoration: none;
+}
+
+.sign-up button {
+    background-color: #9282c3;
+    border-radius: 50px;
+    padding: 8px 20px 10px 20px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    display: block;
+    margin: 20px auto 0px auto;
+}
+.sign-up  button:hover{
+    background-color: #341984;
+    transition: all .3s ease-in-out;
+    
+}
+
+
+footer {
+    background-color: #f5efeb;
+    padding: 100px 100px;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+footer ul li a {
+    color: #5c5856;
+    font-size: 20px;
+}
+
+footer ul li .active {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav .menu-btn{
+    color: #4b2aad;
+    font-size: 25px;
+    display: none;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+@media (min-width: 1440px) {
+    header .hero {
+        margin: 7rem auto 105px auto;
+    }
+
+}
+
+@media (max-width: 1025px) {
+
+    nav .menu-btn{
+        display: block;
+    }
+
+    nav .navbar-content .nav-left .nav-links{
+        position: fixed;
+        top: 105px;
+        right: -100%;
+        width: 20%;
+        background-color: #4b2aad;
+        margin: 28px auto;
+        text-align: center;
+        backdrop-filter: blur(10px);
+        padding: 15.5px 40px 40px 40px;
+        border-radius: 10px;
+        transition: all .4s ease-in-out;
+
+    }
+
+    #click{
+        display: none;
+    }
+    
+    #click:checked ~ .nav-links{
+        right: 5%;
+    }
+
+    nav .navbar-content .nav-left .nav-links li a{
+        color: white;
+    }
+    nav .navbar-content .nav-left .nav-links li a i{
+        display: none;
+    }
+
+
+    header .hero {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        margin: 8rem auto 105px auto;
+        align-items: center;
+    }
+
+    header .hero img {
+        height: 24rem;
+        margin-top: -15px;
+    }
+
+    header .hero .hero-left h1 {
+        color: black;
+        font-size: 30px;
+    }
+
+    .about {
+        width: 90%;
+    }
+
+    .about h1 {
+        font-size: 28px;
+    }
+
+    .services {
+        width: 90%;
+    }
+
+    .services h1 {
+        font-size: 28px;
+    }
+
+    .services .service .service-right img {
+        height: 18rem;
+    }
+
+
+    .sign-up {
+        width: 90%;
+    }
+
+
+    footer {
+        padding: 100px 40px;
+    }
+
+    footer ul li a {
+        color: #5c5856;
+        font-size: 18px;
+    }
+
+
+}
+
+@media (max-width: 787px) {
+
+    nav .navbar-content .nav-left .nav-links{
+        position: fixed;
+        top: 85px;
+        right: -100%;
+        width: 36%;
+        background-color: #4b2aad;
+        margin: 28px auto;
+        text-align: center;
+        backdrop-filter: blur(10px);
+        padding: 15.5px 40px 40px 40px;
+        border-radius: 10px;
+        transition: all .4s ease-in-out;
+
+    }
+
+    header nav .navbar-content .nav-left .nav-links li {
+        display: block;
+        margin-top: 30px;
+    }
+
+    header .hero {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    header .hero .hero-left {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    header .hero img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .about h1 {
+        width: 100%;
+    }
+
+    .about p {
+        width: 100%;
+    }
+
+    .about .cards {
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+    }
+
+    .about .cards .card {
+        margin-top: 90px;
+        width: 100%;
+    }
+
+    .services h1 {
+        font-size: 28px;
+    }
+
+    .services p {
+        width: 100%;
+    }
+
+    .services .service {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .services .service .service-left {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .services .service .service-right img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .sign-up {
+        padding: 30px;
+    }
+
+
+    footer {
+        background-color: #f5efeb;
+        padding: 100px 0px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+}
+
+@media (max-width:426px){
+    nav .navbar-content .nav-left .nav-links{
+        position: fixed;
+        top: 85px;
+        right: -100%;
+        width: 90%;
+        background-color: #4b2aad;
+        margin: 28px auto;
+        text-align: center;
+        backdrop-filter: blur(10px);
+        padding: 15.5px 40px 40px 40px;
+        border-radius: 10px;
+        transition: all .4s ease-in-out;
+
+    }
+}
